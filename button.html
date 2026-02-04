@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        .myButton{
+            background-color: rgb(27, 93, 151);
+            border: none;
+            color: rgb(57, 43, 144);   
+            padding: 15px 32px;
+            text-decoration: none;
+            display:ruby-base;
+            font-size: 16px;
+
+        }
+    </style>
+
+<h1 style="text-align: center;">HTML Buttons</h1>
+
+<p>This is a basic HTML button. It can be clicked, but it will not do anything until you add an action to it.</p>
+<button type ="button"> click</button>
+<br>
+<p>this is the styled button</p>
+<button class="myButton">My Button</button>
+<br>
+<p>This is a disabled button</p>
+<button disabled>Disabled Button</button>
+<br>
+<p>this button shows the message when clicked</p>
+<button onclick ="alert('morning')">Click Me</button>
+<br>
+<p>Button types</p>
+<form action ="#"  onsubmit="alert('Form submitted');">
+  First name: <input type="ABC" name="DEF">
+  <button type="submit">Submit</button>
+  <button type="reset">Reset</button>
+</form>
+<hr>
+<h2 style="text-align: center;">HTML Iframe</h2>
+<iframe src="demo_iframe.htm" style="border: none;" title="simple text"></iframe>
+<iframe src="https://www.example.com" height="200" width="200" style="background-color: lightblue;" title="Example"></iframe>
+<br>
+<p><a href="https://www.w3schools.com">Visit here</a></p>
+<p> This will run in the same page instead of another page</p>
+<hr>
+<h2 style="text-align: center;">HTML JavaScript</h2>
+<p> It can  change the content </p>
+<button type = "button" onclick="myFunction()">click me!</button>
+<p id ="demo">Hypertext Markup language</p>
+<script>
+    function myFunction(){
+        document.getElementById("demo").innerHTML="HTML is the standard markup language for creating Web pages.";
+    }
+</script>
+    <button type ="button" onclick="changeColor()">Click to change </button>
+    <p id ="text">JavaScript is a programming language</p>
+    <script>
+        function changeColor(){
+            document.getElementById("text").style.backgroundColor="lightblue";
+            document.getElementById("text").style.fontSize="30px";
+            document.getElementById("text").style.color="red";
+        }
+    </script>
+
+
+</body>
+</html>
